@@ -8,6 +8,11 @@ import Login from "./Login"
 import PrivateRoute from "./PrivateRoute"
 import ForgotPassword from "./ForgotPassword"
 import UpdateProfile from "./UpdateProfile"
+import ExercisePlan from "./Exercise-Plan/ExercisePlan"
+import DailyNotes from "./Daily-notes/DailyNotes"
+import ToDoList from "./To-do-list/ToDoList"
+import Calendar from "./Calendar/Calendar"
+import SelfCareZone from "./Self-care-zone/SelfCareZone"
 
 function App() {
   return (
@@ -24,6 +29,11 @@ function App() {
               <Route path="/signup" component={Signup} />
               <Route path="/login" component={Login} />
               <Route path="/forgot-password" component={ForgotPassword} />
+              <Route path="/exercise-plan" component={ExercisePlan} />
+              <Route path="/to-do-list" component={ToDoList} />
+              <Route path="/daily-notes" component={DailyNotes}/>
+              <Route path="/calendar" component={Calendar}/>
+              <Route path="/self-care-zone" component={SelfCareZone}/>
             </Switch>
           </AuthProvider>
         </Router>

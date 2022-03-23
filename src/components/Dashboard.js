@@ -21,6 +21,28 @@ export default function Dashboard() {
 
   return (
     <>
+    <nav>
+      <ul>
+        <li key="1">
+          <Link to="/">Home</Link>
+        </li>
+        <li key="2">
+          <Link to="/exercise-plan">Excercise-Plan</Link>
+        </li>
+        <li key="3">
+          <Link to="/to-do-list">To-Do List</Link>
+        </li>
+        <li key="4">
+          <Link to="/daily-notes">Daily Notes</Link>
+        </li>
+        <li key="5">
+          <Link to="/calendar">calendar</Link>
+        </li>
+        <li key="6">
+          <Link to="/self-care-zone">Self Care Zone</Link>
+        </li>
+      </ul>
+    </nav>
       <Card>
         <Card.Body>
           <h2 className="text-center mb-4">Profile</h2>
