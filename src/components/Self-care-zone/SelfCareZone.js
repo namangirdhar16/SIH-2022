@@ -8,7 +8,7 @@ export default function SelfCareZone() {
             <nav>
                 <ul>
                     <li key="1">
-                        <Link to="/diet">Diet-Plan</Link>
+                        <Link to="/self-care-zone/diet">Diet-Plan</Link>
                     </li>
                     <li key="2">
                         <Link to="/sleep-hygiene">Sleep-Hygiene</Link>

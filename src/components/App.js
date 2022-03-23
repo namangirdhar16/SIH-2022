@@ -11,16 +11,17 @@ import UpdateProfile from "./UpdateProfile"
 import ExercisePlan from "./Exercise-Plan/ExercisePlan"
 import DailyNotes from "./Daily-notes/DailyNotes"
 import ToDoList from "./To-do-list/ToDoList"
-import Calendar from "./Calendar/Calendar"
 import SelfCareZone from "./Self-care-zone/SelfCareZone"
+import Diet from "./Self-care-zone/Diet/Diet"
+import CalendarComponent from "./Calendar/Calendar"
 
 function App() {
   return (
     <Container
-      className="d-flex align-items-center justify-content-center"
-      style={{ minHeight: "100vh" }}
+      // className="d-flex align-items-center justify-content-center"
+      // style={{ minHeight: "100vh" }}
     >
-      <div className="w-100" style={{ maxWidth: "400px" }}>
+      <div>
         <Router>
           <AuthProvider>
             <Switch>
@@ -32,8 +33,9 @@ function App() {
               <Route path="/exercise-plan" component={ExercisePlan} />
               <Route path="/to-do-list" component={ToDoList} />
               <Route path="/daily-notes" component={DailyNotes}/>
-              <Route path="/calendar" component={Calendar}/>
+              <Route path="/calendar" component={CalendarComponent}/>
               <Route path="/self-care-zone" component={SelfCareZone}/>
+              <Route path="/self-care-zone/diet" component={Diet}/>
             </Switch>
           </AuthProvider>
         </Router>
