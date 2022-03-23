@@ -1,9 +1,19 @@
-import React from "react"
+import React from "react";
+import Header from "./Header";
+import TextEditor from "./TextEditor";
+import SearchBar from "./SearchBar";
 
-export default function DailyNotes() {
-    return(
-        <>
-        <h1>DailyNotes component</h1>
-        </>
-    )
+function Notes() {
+   const handle = ({body}) => {
+       console.log(body);
+   }
+   return (
+       <>
+       <Header/>
+       <SearchBar />
+       <TextEditor onSubmit={handle}/>
+       </>
+   )
 }
+
+export default Notes;
